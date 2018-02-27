@@ -1,0 +1,22 @@
+{
+  "name": "steemitminion",
+  "version": "1.0.0",
+  "description": "Steemit Bot with Node.js  \r README This.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxiom/steemitMinion.git"
+  },
+  "author": "Jake Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxiom/steemitMinion/issues"
+  },
+  "homepage": "https://github.com/maxiom/steemitMinion#readme",
+  "dependencies": {
+    "steem": "^0.7.1"
+  }
+}
