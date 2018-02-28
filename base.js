@@ -22,6 +22,7 @@ var dbconfig = {
 
 // Connect to mysql database...
 const mysql = require('mysql');
+const logger = require('./logger.js');
 
 const pool = mysql.createPool(process.env.NODE_ENV === 'development' ? dbconfig.dev : dbconfig.prod);
 
@@ -34,6 +35,8 @@ var steemBotDB = (function () {
                 callback(null, err);
                 throw err;
             }
+
+            logger.info('connected as id ' + connection.threadId);
 
             connection.query(query, params, function (err, rows) {
                 connection.release();
