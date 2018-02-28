@@ -23,7 +23,14 @@ var dbconfig = {
 // Connect to mysql database...
 const mysql = require('mysql');
 
-const pool = mysql.createPool(process.env.NODE_ENV === 'development' ? dbconfig.dev : dbconfig.prod);
+var pool = mysql.createPool({
+  connectionLimit: 100,
+  host: '10.10.1.24',
+  user: 'root',
+  password: 'password',
+  database: 'steemBotDB',
+  debug: true
+});
 
 var steemBotDB = (function () {
 

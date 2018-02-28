@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/maxiom/steemitMinion#readme",
   "dependencies": {
+    "mysql": "^2.15.0",
     "steem": "^0.7.1",
     "synchronize": "^2.0.0",
-    "winston": "^2.4.0"
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2"
   }
 }
