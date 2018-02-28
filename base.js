@@ -25,11 +25,11 @@ const mysql = require('mysql');
 
 var pool = mysql.createPool({
   connectionLimit: 100,
-  host: '10.10.1.24',
+  host: '127.0.0.1',
   user: 'root',
   password: 'password',
   database: 'steemBotDB',
-  debug: true
+  debug: false
 });
 
 var steemBotDB = (function () {
