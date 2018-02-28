@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/maxiom/steemitMinion#readme",
   "dependencies": {
-    "steem": "^0.7.1"
+    "steem": "^0.7.1",
+    "synchronize": "^2.0.0"
   }
 }
